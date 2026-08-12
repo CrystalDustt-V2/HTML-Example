@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration — solution</title>
+</head>
+<body>
+    <h1>Student registration form</h1>
+
+    <form>
+        <label for="fullname">Full name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="e.g. Alex Smith" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="6" max="99">
+
+        <label for="startdate">Start date</label>
+        <input type="date" id="startdate" name="startdate">
+
+        <p>Study program</p>
+        <input type="radio" id="program-html" name="program" value="html">
+        <label for="program-html">HTML &amp; Web</label>
+
+        <input type="radio" id="program-python" name="program" value="python">
+        <label for="program-python">Python</label>
+
+        <input type="radio" id="program-design" name="program" value="design">
+        <label for="program-design">Design</label>
+
+        <label for="subject">Favorite subject</label>
+        <select id="subject" name="subject">
+            <option value="">Please choose…</option>
+            <option value="math">Math</option>
+            <option value="english">English</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+        </select>
+
+        <label for="notes">Additional notes</label>
+        <textarea id="notes" name="notes" rows="4" cols="40"></textarea>
+
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Send me the course newsletter</label>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+
+        <button type="submit">Register</button>
+        <button type="reset">Clear the form</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 09 — Forms</title>
+</head>
+<body>
+    <h1>Student registration</h1>
+
+    <form>
+        <!-- Text input -->
+        <label for="fullname">Full name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="e.g. Alex Smith" required>
+
+        <!-- Email and password -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+
+        <!-- Number and date -->
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="6" max="99">
+
+        <label for="startdate">Start date</label>
+        <input type="date" id="startdate" name="startdate">
+
+        <!-- Radio buttons: one choice from the group -->
+        <p>Schedule</p>
+        <input type="radio" id="fulltime" name="schedule" value="full-time">
+        <label for="fulltime">Full time</label>
+
+        <input type="radio" id="parttime" name="schedule" value="part-time">
+        <label for="parttime">Part time</label>
+
+        <!-- Dropdown -->
+        <label for="course">Course</label>
+        <select id="course" name="course">
+            <option value="">Please choose…</option>
+            <option value="html">HTML</option>
+            <option value="python">Python</option>
+            <option value="design">Design</option>
+        </select>
+
+        <!-- Multi-line text -->
+        <label for="message">Anything else?</label>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I agree to the terms and conditions</label>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

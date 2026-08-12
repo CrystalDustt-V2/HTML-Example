@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 08 — Tables</title>
+</head>
+<body>
+    <h1>Report card — Spring 2026</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>First term</th>
+                <th>Second term</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Math</td>
+                <td>B</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>A</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>B</td>
+                <td>B</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>One merged cell (colspan)</h2>
+
+    <table>
+        <tr>
+            <th colspan="2">This heading spans two columns</th>
+        </tr>
+        <tr>
+            <td>Left</td>
+            <td>Right</td>
+        </tr>
+    </table>
+
+    <h2>One merged cell (rowspan)</h2>
+
+    <table>
+        <tr>
+            <td rowspan="2">This cell spans two rows</td>
+            <td>Top</td>
+        </tr>
+        <tr>
+            <td>Bottom</td>
+        </tr>
+    </table>
+</body>
+</html>
