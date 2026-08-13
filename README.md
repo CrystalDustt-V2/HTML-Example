@@ -5,8 +5,8 @@ examples, and — most importantly — writing your own code.
 
 **HTML-Example** is a small, beginner-friendly repository with two courses:
 
-1. **[HTML course](html/README.md)** — the practical fundamentals of HTML.
-2. **[CSS course](css/README.md)** — styling those pages with CSS.
+1. **[HTML course](01-html/README.md)** — the practical fundamentals of HTML.
+2. **[CSS course](02-css/README.md)** — styling those pages with CSS.
 
 It is deliberately small: it does **not** cover JavaScript, frameworks, or
 build tools. Every lesson follows the same path:
@@ -51,10 +51,10 @@ projects.
       and compare your work with it.
 
 3. When you have finished the ten HTML lessons, build the
-   [HTML Final Project](html/final-project/README.md): a personal website in
+   [HTML Final Project](01-html/final-project/README.md): a personal website in
    plain HTML.
 4. Then start the **CSS course** and style that same website. Finish with the
-   [CSS Final Project](css/final-project/README.md).
+   [CSS Final Project](02-css/final-project/README.md).
 5. Tick the boxes in the [progress checklist](#progress-checklist) below as
    you go.
 
@@ -67,17 +67,17 @@ projects.
 
 | # | Lesson | What you will learn | Difficulty |
 |---|--------|---------------------|------------|
-| 01 | [Introduction](html/01-introduction/README.md) | What HTML is, elements, tags, attributes, comments | Easy |
-| 02 | [Document Structure](html/02-document-structure/README.md) | `<!DOCTYPE html>`, `<html>`, `<head>`, `<title>`, `<body>` | Easy |
-| 03 | [Headings and Paragraphs](html/03-headings-and-paragraphs/README.md) | `<h1>`–`<h6>`, `<p>`, `<br>`, `<hr>` | Easy |
-| 04 | [Text Formatting](html/04-text-formatting/README.md) | `<strong>`, `<em>`, `<b>`, `<i>`, `<u>`, `<mark>`, `<small>`, `<del>`, `<ins>`, `<sub>`, `<sup>` | Easy |
-| 05 | [Links](html/05-links/README.md) | `<a href>`, `target="_blank"`, relative links | Easy |
-| 06 | [Images](html/06-images/README.md) | `<img src alt>`, relative paths, external URLs, `width`, `height` | Medium |
-| 07 | [Lists](html/07-lists/README.md) | `<ul>`, `<ol>`, `<li>`, nested lists | Medium |
-| 08 | [Tables](html/08-tables/README.md) | `<table>`, `<tr>`, `<th>`, `<td>`, `<thead>`, `<tbody>`, `colspan`, `rowspan` | Medium |
-| 09 | [Forms](html/09-forms/README.md) | `<form>`, `<label>`, `<input>`, `<textarea>`, `<select>`, `<option>`, `<button>` | Medium |
-| 10 | [Semantic HTML](html/10-semantic-html/README.md) | `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>` | Medium |
-| — | [Final Project](html/final-project/README.md) | Build a personal website in plain HTML | Hard |
+| 01 | [Introduction](01-html/01-introduction/README.md) | What HTML is, elements, tags, attributes, comments | Easy |
+| 02 | [Document Structure](01-html/02-document-structure/README.md) | `<!DOCTYPE html>`, `<html>`, `<head>`, `<title>`, `<body>` | Easy |
+| 03 | [Headings and Paragraphs](01-html/03-headings-and-paragraphs/README.md) | `<h1>`–`<h6>`, `<p>`, `<br>`, `<hr>` | Easy |
+| 04 | [Text Formatting](01-html/04-text-formatting/README.md) | `<strong>`, `<em>`, `<b>`, `<i>`, `<u>`, `<mark>`, `<small>`, `<del>`, `<ins>`, `<sub>`, `<sup>` | Easy |
+| 05 | [Links](01-html/05-links/README.md) | `<a href>`, `target="_blank"`, relative links | Easy |
+| 06 | [Images](01-html/06-images/README.md) | `<img src alt>`, relative paths, external URLs, `width`, `height` | Medium |
+| 07 | [Lists](01-html/07-lists/README.md) | `<ul>`, `<ol>`, `<li>`, nested lists | Medium |
+| 08 | [Tables](01-html/08-tables/README.md) | `<table>`, `<tr>`, `<th>`, `<td>`, `<thead>`, `<tbody>`, `colspan`, `rowspan` | Medium |
+| 09 | [Forms](01-html/09-forms/README.md) | `<form>`, `<label>`, `<input>`, `<textarea>`, `<select>`, `<option>`, `<button>` | Medium |
+| 10 | [Semantic HTML](01-html/10-semantic-html/README.md) | `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>` | Medium |
+| — | [Final Project](01-html/final-project/README.md) | Build a personal website in plain HTML | Hard |
 
 ### 2. CSS course
 
@@ -85,17 +85,17 @@ projects.
 
 | # | Lesson | What you will learn | Difficulty |
 |---|--------|---------------------|------------|
-| 01 | [Introduction to CSS](css/01-introduction/README.md) | CSS rules, selectors, properties, three ways to add CSS, comments | Easy |
-| 02 | [Colors and Backgrounds](css/02-colors-and-backgrounds/README.md) | `color`, `background-color`, named colors, hex, `rgb()` | Easy |
-| 03 | [Text Styling](css/03-text-styling/README.md) | `font-family`, `font-size`, `font-weight`, `text-align`, `line-height`, … | Easy |
-| 04 | [Selectors](css/04-selectors/README.md) | Type, class, and id selectors, grouping, descendant selectors | Easy |
-| 05 | [The Box Model](css/05-box-model/README.md) | Content, `padding`, `border`, `margin` | Medium |
-| 06 | [Links and Lists](css/06-links-and-lists/README.md) | Styling links (`:hover`, `:visited`, …) and lists | Medium |
-| 07 | [Display and Positioning](css/07-display-and-positioning/README.md) | `display` modes, `position` (relative, absolute, fixed) | Medium |
-| 08 | [Flexbox](css/08-flexbox/README.md) | `display: flex`, `flex-direction`, `justify-content`, `align-items`, `gap` | Medium |
-| 09 | [Forms and Tables](css/09-forms-and-tables/README.md) | Styling form fields and tables, `:focus`, `border-collapse` | Medium |
-| 10 | [Cascade and Best Practices](css/10-cascade-and-best-practices/README.md) | Cascade, specificity, inheritance, external stylesheets | Medium |
-| — | [Final Project](css/final-project/README.md) | Style the personal website with an external stylesheet | Hard |
+| 01 | [Introduction to CSS](02-css/01-introduction/README.md) | CSS rules, selectors, properties, three ways to add CSS, comments | Easy |
+| 02 | [Colors and Backgrounds](02-css/02-colors-and-backgrounds/README.md) | `color`, `background-color`, named colors, hex, `rgb()` | Easy |
+| 03 | [Text Styling](02-css/03-text-styling/README.md) | `font-family`, `font-size`, `font-weight`, `text-align`, `line-height`, … | Easy |
+| 04 | [Selectors](02-css/04-selectors/README.md) | Type, class, and id selectors, grouping, descendant selectors | Easy |
+| 05 | [The Box Model](02-css/05-box-model/README.md) | Content, `padding`, `border`, `margin` | Medium |
+| 06 | [Links and Lists](02-css/06-links-and-lists/README.md) | Styling links (`:hover`, `:visited`, …) and lists | Medium |
+| 07 | [Display and Positioning](02-css/07-display-and-positioning/README.md) | `display` modes, `position` (relative, absolute, fixed) | Medium |
+| 08 | [Flexbox](02-css/08-flexbox/README.md) | `display: flex`, `flex-direction`, `justify-content`, `align-items`, `gap` | Medium |
+| 09 | [Forms and Tables](02-css/09-forms-and-tables/README.md) | Styling form fields and tables, `:focus`, `border-collapse` | Medium |
+| 10 | [Cascade and Best Practices](02-css/10-cascade-and-best-practices/README.md) | Cascade, specificity, inheritance, external stylesheets | Medium |
+| — | [Final Project](02-css/final-project/README.md) | Style the personal website with an external stylesheet | Hard |
 
 ## Learning path
 
@@ -140,11 +140,11 @@ they are needed, and exercises only use things you have already learned.
 
 ## Final projects
 
-- **[HTML Final Project](html/final-project/README.md)** — after the ten HTML
+- **[HTML Final Project](01-html/final-project/README.md)** — after the ten HTML
   lessons, build a simple **personal website** that uses headings, paragraphs,
   text formatting, links, images, lists, tables, forms, semantic HTML, and
   comments — all in plain HTML.
-- **[CSS Final Project](css/final-project/README.md)** — after the ten CSS
+- **[CSS Final Project](02-css/final-project/README.md)** — after the ten CSS
   lessons, style that personal website: colors, typography, the box model,
   links, lists, positioning, flexbox, and styled forms and tables — all from
   one external `style.css`.
