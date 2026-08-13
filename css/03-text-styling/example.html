@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 03 — Text Styling</title>
+    <style>
+        /* Clean sans-serif for everything, with a comfortable line height */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* A serif font for the main heading */
+        h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #1f4e79;
+        }
+
+        /* A short quote, centered and italic */
+        .quote {
+            font-style: italic;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* Make the important word stand out */
+        .warning {
+            font-weight: bold;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Styling</h1>
+
+    <h2>Why typography matters</h2>
+
+    <p class="quote">"Good typography makes reading easy — bad typography makes
+        reading a chore."</p>
+
+    <p>This page uses <strong>Georgia</strong> for the main heading and
+        <strong>Arial</strong> for everything else. The line height is 1.6,
+        which gives each line of text a little breathing room.</p>
+
+    <p class="warning">Warning: the heading above is written in uppercase
+        using CSS — the HTML still contains normal text.</p>
+
+    <p>Try changing the <strong>font-family</strong> rule on
+        <strong>body</strong> to <strong>monospace</strong> and refresh. The
+        whole page switches to a typewriter look, without touching the HTML at
+        all.</p>
+</body>
+</html>

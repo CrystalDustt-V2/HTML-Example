@@ -1,0 +1,41 @@
+/* ---------- Base ---------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222222;
+}
+
+/* ---------- Typography ---------- */
+h1, h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #1f4e79;
+}
+
+/* A class beats a type rule: .intro wins over h2 */
+.intro {
+    color: #444444;
+    font-style: italic;
+}
+
+/* ---------- Links ---------- */
+a:link {
+    color: #1f4e79;
+}
+
+a:hover {
+    color: #b22222;
+}
+
+/* ---------- Card ---------- */
+.card {
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+}
+
+/* Later rules win at equal specificity: this one beats the earlier p rule */
+.card p {
+    color: #333333;
+}

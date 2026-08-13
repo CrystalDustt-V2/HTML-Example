@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 08 — Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* A nav: brand on the left, links on the right */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1f4e79;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        /* A row of cards that grow equally and wrap nicely */
+        .cards {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        /* Perfect centering, both directions */
+        .centered-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            margin-top: 30px;
+            background-color: #eef4fb;
+            border: 1px dashed #1f4e79;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <strong>My Site</strong>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <div class="cards">
+        <div class="card">
+            <strong>Card 1</strong>
+            <p>Each card grows to the same width thanks to flex: 1.</p>
+        </div>
+        <div class="card">
+            <strong>Card 2</strong>
+            <p>The gap between the cards comes from the gap property on the
+                container.</p>
+        </div>
+        <div class="card">
+            <strong>Card 3</strong>
+            <p>No margins were needed on the cards themselves.</p>
+        </div>
+    </div>
+
+    <div class="centered-box">I am centered both ways with justify-content:
+        center and align-items: center.</div>
+</body>
+</html>

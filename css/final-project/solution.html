@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alex — My Personal Website</title>
+    <!-- All styling lives in the external stylesheet linked below. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+    <header>
+        <h1>Alex Rivera</h1>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>About me</h2>
+
+            <div class="about-content">
+                <img src="images/avatar.svg" alt="A placeholder avatar of a person" width="150" height="150">
+
+                <div class="about-text">
+                    <p>
+                        Hi! I am Alex, and I have just finished a ten-lesson HTML
+                        course. This website is my <strong>final project</strong> —
+                        now I am styling it with <em>CSS</em>.
+                    </p>
+                    <p>
+                        I started learning in <mark>February 2026</mark>. My
+                        favorite lesson was <del>tables</del> <ins>semantic
+                        HTML</ins>, because it made me think about what my
+                        content actually means.
+                    </p>
+                    <p><small>Fun fact: I practice every evening, even on weekends.</small></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My projects</h2>
+
+            <div class="projects">
+                <article class="project">
+                    <h3>My first web page</h3>
+                    <img src="images/project-1.svg" alt="A placeholder screenshot of my first web page" width="240" height="160">
+                    <p>
+                        The very first page I ever wrote, from Lesson 01: a short
+                        introduction with a heading, two paragraphs, and a comment.
+                    </p>
+                </article>
+
+                <article class="project">
+                    <h3>My recipe page</h3>
+                    <img src="images/project-2.svg" alt="A placeholder screenshot of my recipe page" width="240" height="160">
+                    <p>
+                        A page with a nested list of ingredients and an ordered
+                        list of steps — from the lists lesson.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>My skills</h2>
+            <ul class="skills">
+                <li>HTML
+                    <ul>
+                        <li>Document structure</li>
+                        <li>Links and images</li>
+                        <li>Tables and forms</li>
+                        <li>Semantic elements</li>
+                    </ul>
+                </li>
+                <li>Tools
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Browser developer tools</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="schedule">
+            <h2>My weekly schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Review the lesson of the week</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Practice exercises</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Build a small practice page</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact me</h2>
+
+            <form class="contact-form">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Sam" required>
+
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic">
+                    <option value="">Please choose…</option>
+                    <option value="question">A question about HTML</option>
+                    <option value="feedback">Feedback on this site</option>
+                    <option value="hello">Just saying hello</option>
+                </select>
+
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" rows="4" cols="40"></textarea>
+
+                <button type="submit">Send message</button>
+            </form>
+        </section>
+    </main>
+
+    <aside class="quote-box">
+        <h2>Favorite quote</h2>
+        <p>
+            <em>"The only way to learn a new programming language is by
+            writing programs in it."</em> — Dennis Ritchie
+        </p>
+    </aside>
+
+    <footer>
+        <p><small>© 2026 Alex Rivera — built with pure HTML and CSS.</small></p>
+        <p>
+            <a href="#top">Back to top</a> |
+            <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+        </p>
+    </footer>
+</body>
+</html>

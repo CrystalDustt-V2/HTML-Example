@@ -1,0 +1,234 @@
+/* ============================================================
+   Personal website — stylesheet
+   Organized by comment groups: Base, Header, Layout, Sections,
+   Lists, Table, Form, Aside, Footer.
+   ============================================================ */
+
+/* ---------- Base ---------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;   /* sans-serif fallback */
+    line-height: 1.6;
+    color: #222222;                              /* hex text color */
+    background-color: rgb(245, 245, 245);        /* rgb page background */
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #1f4e79;                              /* named? no — hex dark blue */
+}
+
+/* ---------- Header & nav ---------- */
+header {
+    background-color: #1f4e79;
+    color: white;
+    padding: 20px 30px;
+}
+
+header h1 {
+    color: white;
+    margin: 0 0 10px 0;
+}
+
+/* Menu reset: no bullets, no indent */
+nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;                               /* flexbox row */
+    gap: 10px;                                   /* gap between items */
+}
+
+nav ul.menu a {
+    display: inline-block;
+    padding: 8px 14px;
+    color: white;
+    text-decoration: none;
+    background-color: #2a5d8f;
+    border-radius: 4px;
+}
+
+/* Link states, in order: link, visited, hover, active */
+nav ul.menu a:link {
+    color: white;
+}
+
+nav ul.menu a:visited {
+    color: #d9e4f0;
+}
+
+nav ul.menu a:hover {
+    background-color: #b22222;                   /* named color */
+}
+
+nav ul.menu a:active {
+    background-color: #7a1c1c;
+}
+
+nav ul.menu a:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+/* ---------- Layout ---------- */
+.container {
+    width: 860px;
+    max-width: 100%;
+    margin: 0 auto;                              /* centers the column */
+    padding: 20px;
+}
+
+/* ---------- Sections ---------- */
+section {
+    background-color: white;
+    padding: 20px 25px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* About: avatar and text side by side */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-content img {
+    border-radius: 50%;                          /* round avatar */
+    border: 3px solid #1f4e79;
+}
+
+.about-text p {
+    margin: 0 0 10px 0;
+}
+
+/* Projects: a row of equal cards */
+.projects {
+    display: flex;
+    gap: 20px;
+}
+
+.project {
+    flex: 1;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- Lists ---------- */
+.skills {
+    list-style-type: square;                     /* non-default marker */
+}
+
+.skills > li {
+    margin-bottom: 10px;
+}
+
+/* ---------- Table ---------- */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #1f4e79;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #eef4fb;                   /* zebra stripes */
+}
+
+/* ---------- Form ---------- */
+.contact-form {
+    width: 100%;
+    max-width: 480px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #1f4e79;
+    outline: 2px solid #1f4e79;
+    outline-offset: 1px;
+}
+
+.contact-form button {
+    margin-top: 14px;
+    padding: 10px 22px;
+    background-color: #1f4e79;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #b22222;
+}
+
+/* ---------- Aside & footer ---------- */
+.quote-box {
+    width: 860px;
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+    padding: 15px 25px;
+    background-color: #fff8dc;
+    border-left: 4px solid #b8860b;
+    border-radius: 4px;
+}
+
+.quote-box p {
+    margin: 0;
+}
+
+footer {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #cfe0f2;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer a:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 05 — The Box Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* A card: content + padding + border + margin, all in one */
+        .card {
+            width: 300px;
+            padding: 20px;
+            border: 2px solid #1f4e79;
+            border-radius: 8px;
+            background-color: #eef4fb;
+            margin: 20px;
+        }
+
+        /* A simple "button" look: padding + background + border */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1f4e79;
+            color: white;
+            border-radius: 4px;
+            margin: 20px;
+        }
+
+        /* A centered box using margin: 0 auto */
+        .centered {
+            width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px dashed gray;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>The box model</h1>
+
+    <p>Every element is a box. The card below has 20px of padding inside its
+        border and 20px of margin outside it. Try changing the padding to
+        40px — the blue area inside the border grows, because padding shows
+        the background color.</p>
+
+    <div class="card">
+        <strong>Card:</strong> content, then 20px padding (the light blue
+        area), then a 2px solid border, then 20px margin separating me from
+        the rest of the page.
+    </div>
+
+    <a class="button" href="#">A button look</a>
+
+    <div class="centered">This box is 400px wide and centered with
+        margin: 0 auto.</div>
+</body>
+</html>

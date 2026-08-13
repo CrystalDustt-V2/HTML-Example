@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 10 — My External Stylesheet</title>
+    <link rel="stylesheet" href="solution.css">
+</head>
+<body>
+    <h1>My external stylesheet</h1>
+
+    <p class="intro">Prediction: the .intro class rule wins over the p rule,
+        because a class is more specific than a type. Check — this text is
+        styled by .intro.</p>
+
+    <p>A normal paragraph, styled by the base and typography rules only.</p>
+
+    <div class="card">
+        <p>This paragraph is inside a card. The .card p rule is more specific
+            than the plain p rule, so its color differs from the paragraph
+            above.</p>
+    </div>
+
+    <p id="footer-note">Challenge: this paragraph has an id, which beats both
+        the type rule and the class rule. It is bold and blue.</p>
+</body>
+</html>

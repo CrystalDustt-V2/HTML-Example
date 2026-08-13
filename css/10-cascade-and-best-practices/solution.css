@@ -1,0 +1,37 @@
+/* ---------- Base ---------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222222;
+}
+
+/* ---------- Typography ---------- */
+h1 {
+    color: #1f4e79;
+}
+
+/* .intro (class) beats p (type) — see the prediction in exercise.md */
+.intro {
+    color: #b22222;
+    font-style: italic;
+}
+
+/* ---------- Card ---------- */
+.card {
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* .card p is more specific than p, so paragraphs in the card differ */
+.card p {
+    color: #444444;
+}
+
+/* ---------- Footer note ---------- */
+/* id beats class and type: this wins over .intro and p */
+#footer-note {
+    color: #1f4e79;
+    font-weight: bold;
+}

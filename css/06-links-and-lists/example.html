@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 06 — Links and Lists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Link states, in the classic order: link, visited, hover, active */
+        a:link {
+            color: #1f4e79;
+        }
+
+        a:visited {
+            color: #6b4e9e;
+        }
+
+        a:hover {
+            color: #b22222;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #7a1c1c;
+        }
+
+        a:focus {
+            outline: 2px solid #1f4e79;
+            outline-offset: 2px;
+        }
+
+        /* A real menu: no bullets, no indent, links as buttons */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #1f4e79;
+        }
+
+        nav a:hover {
+            background-color: #b22222;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* A "square bullets" list */
+        .square-list {
+            list-style-type: square;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Links and lists</h1>
+
+    <p>Hover over this
+        <a href="https://developer.mozilla.org" target="_blank">link to the
+        MDN docs</a> — its color changes while your mouse is over it. The
+        links in the menu above are styled to look like buttons instead.</p>
+
+    <p>This list uses square bullets:</p>
+
+    <ul class="square-list">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+</body>
+</html>

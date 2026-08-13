@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 07 — Display and Positioning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* Give the page room to scroll so the fixed bar is visible */
+            padding-top: 50px;
+        }
+
+        /* Block paragraphs stack vertically and take full width */
+        .block-box {
+            background-color: #eef4fb;
+            border: 1px solid #1f4e79;
+            margin-bottom: 10px;
+        }
+
+        /* Inline elements sit next to each other */
+        .inline-box {
+            background-color: #fff3b0;
+            padding: 4px 10px;
+        }
+
+        /* Inline-block: on one line, but accepts width and height */
+        .inline-block-box {
+            display: inline-block;
+            width: 120px;
+            background-color: #dbe9f7;
+            border: 1px solid #1f4e79;
+            padding: 8px;
+            margin-right: 10px;
+        }
+
+        /* A card with an absolutely positioned badge */
+        .card {
+            position: relative;
+            width: 300px;
+            padding: 20px;
+            border: 2px solid #1f4e79;
+            border-radius: 8px;
+            background-color: #eef4fb;
+            margin-top: 30px;
+        }
+
+        .badge {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            background-color: #b22222;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+
+        /* A fixed top bar that stays while scrolling */
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #1f4e79;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top-bar">This bar is fixed: it stays at the top while you scroll.</div>
+
+    <h1>Display and positioning</h1>
+
+    <p class="block-box">I am a block: I start on a new line and stretch the
+        full width of the page.</p>
+
+    <p class="block-box">I am another block, so I stack below the first one.</p>
+
+    <p>These words are <span class="inline-box">inline elements</span>, so
+        they flow <span class="inline-box">next to each other</span> like
+        text.</p>
+
+    <p>The three boxes below are inline-block: they share one line, but each
+        one has a width and padding.</p>
+
+    <div class="inline-block-box">box 1</div>
+    <div class="inline-block-box">box 2</div>
+    <div class="inline-block-box">box 3</div>
+
+    <div class="card">
+        <span class="badge">NEW</span>
+        <strong>Card with a badge.</strong>
+        <p>The badge is positioned absolutely, relative to this card (which
+            has position: relative).</p>
+    </div>
+</body>
+</html>

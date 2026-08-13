@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 06 — My Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Link states, in order: link, visited, hover, active */
+        a:link {
+            color: #1f4e79;
+        }
+
+        a:visited {
+            color: #6b4e9e;
+        }
+
+        a:hover {
+            color: #b22222;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #7a1c1c;
+        }
+
+        a:focus {
+            outline: 2px solid #1f4e79;
+            outline-offset: 2px;
+        }
+
+        /* Menu reset: no bullets, no indent */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 10px 16px;
+            text-decoration: none;
+            color: white;
+            background-color: #1f4e79;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background-color: #b22222;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* The "active" page stands out */
+        nav a.active {
+            background-color: #b8860b;
+        }
+
+        /* Reading list: letters instead of numbers/bullets */
+        .reading-list {
+            list-style-type: lower-alpha;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>My reading list</h1>
+
+    <p>Books I want to finish this year:</p>
+
+    <ul class="reading-list">
+        <li>Eloquent JavaScript</li>
+        <li>Refactoring UI</li>
+        <li>The Design of Everyday Things</li>
+    </ul>
+</body>
+</html>

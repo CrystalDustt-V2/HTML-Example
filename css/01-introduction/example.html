@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 01 — Introduction to CSS</title>
+    <style>
+        /* This is a CSS comment. The browser ignores it. */
+
+        /* Selector "h1": applies to every h1 on the page */
+        h1 {
+            color: darkblue;
+            font-size: 36px;
+        }
+
+        /* Selector "p": applies to every paragraph */
+        p {
+            color: #444444;
+            font-size: 18px;
+        }
+
+        /* Selector "strong": applies to every strong element */
+        strong {
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>My first styled page</h1>
+
+    <p>This paragraph is gray and 18 pixels tall. The <strong>strong</strong>
+        rule makes the bold words red, while the paragraph rule makes the rest
+        of the text gray. Each rule only affects the element its selector
+        names.</p>
+
+    <p>The <strong>CSS</strong> for this page lives in the
+        <strong>style</strong> element inside the <strong>head</strong> of the
+        document.</p>
+
+    <!-- Try this: change darkblue to another color and refresh the page. -->
+</body>
+</html>

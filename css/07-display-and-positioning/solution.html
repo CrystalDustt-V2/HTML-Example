@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 07 — Product Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 60px;   /* so the fixed bar does not cover content */
+        }
+
+        /* Fixed announcement bar */
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #1f4e79;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-weight: bold;
+        }
+
+        /* Cards */
+        .card {
+            position: relative;
+            width: 320px;
+            margin: 30px auto;
+            padding: 20px 24px;
+            border: 2px solid #1f4e79;
+            border-radius: 10px;
+            background-color: #eef4fb;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        /* The badge hangs over the top-right corner */
+        .badge {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            background-color: #b22222;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* A "price" chip that sits inline but keeps its own shape */
+        .price {
+            display: inline-block;
+            background-color: #1f4e79;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-right: 8px;
+        }
+
+        /* Inline styling that flows with the text */
+        .sale {
+            color: #b22222;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">Free shipping on orders over $25!</div>
+
+    <h1>Today's specials</h1>
+
+    <div class="card">
+        <span class="badge">BEST SELLER</span>
+        <h2>Linen Notebook</h2>
+        <p><span class="price">$12</span> A <span class="sale">120-page</span>
+            notebook with a soft linen cover.</p>
+    </div>
+
+    <div class="card">
+        <span class="badge">NEW</span>
+        <h2>Ceramic Mug</h2>
+        <p><span class="price">$9</span> Hand-glazed, dishwasher safe,            holds 350 ml.</p>
+    </div>
+
+    <div class="card">
+        <h2>Wooden Pen</h2>
+        <p><span class="price">$4</span> A smooth wooden pen with a brass
+            clip. No badge on this card.</p>
+    </div>
+</body>
+</html>

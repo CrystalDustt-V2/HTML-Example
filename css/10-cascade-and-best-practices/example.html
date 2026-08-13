@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 10 — Cascade and Best Practices</title>
+    <!-- The CSS lives in its own file. One stylesheet can style many pages. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>The cascade in action</h1>
+
+    <!-- .intro is a class, so it beats the h2 type rule for color -->
+    <h2 class="intro">This heading is styled by the .intro class rule, which
+        wins over the h2 rule.</h2>
+
+    <p>This paragraph is outside a card. It inherits the body font and gets
+        its colors from the base rules.</p>
+
+    <div class="card">
+        <h2>Inside the card</h2>
+        <p>This paragraph has its own rule (<strong>.card p</strong>), so it
+            does not use the plain paragraph color from the base section.</p>
+    </div>
+
+    <p>Open <strong>style.css</strong> in your editor — it is organized with
+        comment groups: Base, Typography, Links, Card.</p>
+</body>
+</html>

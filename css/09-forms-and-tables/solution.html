@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 09 — Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* A narrow form so fields do not stretch across the page */
+        form {
+            width: 400px;
+        }
+
+        /* Consistent fields */
+        input, select, textarea {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        /* Visible focus state */
+        input:focus, select:focus, textarea:focus {
+            border-color: #1f4e79;
+            outline: 2px solid #1f4e79;
+            outline-offset: 1px;
+        }
+
+        /* Button */
+        button {
+            margin-top: 12px;
+            padding: 10px 24px;
+            background-color: #1f4e79;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #b22222;
+        }
+
+        /* Table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 10px 14px;
+            text-align: left;
+        }
+
+        thead th {
+            background-color: #1f4e79;
+            color: white;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #eef4fb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Register</h1>
+
+    <form>
+        <p>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name">
+        </p>
+        <p>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+        </p>
+        <p>
+            <label for="level">Level</label><br>
+            <select id="level" name="level">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </p>
+        <button type="submit">Register</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Math</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>History</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Art</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

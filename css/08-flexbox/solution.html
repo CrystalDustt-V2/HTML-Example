@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 08 — Flexbox Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        /* Nav: brand left, links right */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1f4e79;
+            color: white;
+            padding: 12px 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        /* Cards: one row that wraps when narrow */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        /* flex: 1 1 200px means grow, shrink, and start at 200px wide —
+           with flex-wrap on the container, the cards wrap when the window
+           gets narrow. (The shorthand from the lesson, flex: 1, is the same
+           as flex: 1 1 0%.) */
+        .card {
+            flex: 1 1 200px;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        /* Centered sign-up area */
+        .signup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 180px;
+            margin: 30px;
+            background-color: #eef4fb;
+            border: 1px dashed #1f4e79;
+        }
+
+        /* Footer: a centered column */
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1f4e79;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <strong>My Site</strong>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <div class="cards">
+        <div class="card">
+            <strong>Card 1</strong>
+            <p>Flexbox keeps these three cards at equal width and equal
+                height.</p>
+        </div>
+        <div class="card">
+            <strong>Card 2</strong>
+            <p>The gap property handles the spacing between them.</p>
+        </div>
+        <div class="card">
+            <strong>Card 3</strong>
+            <p>Shrink the window — the row wraps instead of squishing.</p>
+        </div>
+    </div>
+
+    <div class="signup">Sign up for the newsletter (centered both ways)</div>
+
+    <footer>
+        <strong>My Site</strong>
+        <small>Made with flexbox — no floats, no positioning hacks.</small>
+    </footer>
+</body>
+</html>
